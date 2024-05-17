@@ -79,7 +79,7 @@ jobs:
     - if: matrix.build-mode == 'manual'
       shell: bash
       run: |
-        msbuild CredentialManagement.sln
+        msbuild src/CredentialManagement.sln
 
     - name: Perform CodeQL Analysis
       uses: github/codeql-action/analyze@v3
